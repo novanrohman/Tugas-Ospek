@@ -8,46 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/style/css/style.css">
-    <link rel="stylesheet" href="assets/style/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/bootstrap4/css/bootstrap.min.css">
+
 </head>
 
 <body>
     <nav class="fixed-top navbar navbar-expand-sm navbar-dark" style="background-color: rgba(0,0,0,0.5);">
-        <img class="navbar-brand" src="assets/img/logo.png" alt="" srcset="" height="40px">
-        <a class="navbar-brand" href="#">Novan Dev</a>
+        <!-- Brand -->
+        <a href="index.html"> <img class="navbar-brand" src="assets/img/logo.png" alt="NovanDev" srcset=""
+                height="60px"></a>
+        <a class="navbar-brand" href="index.html">Novan Dev</a>
+        <!-- End Brand -->
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#About">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#Portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#Contact">Contact</a>
                 </li>
             </ul>
         </div>
+        <!-- End Menu -->
     </nav>
 
 
 
     <!-- Jumbotron -->
-    <div class="jumbotron">
+    <div class="jumbotron border-radius-0">
         <div class="container special">
             <div class="row mt-5">
                 <div class="profile col-md-3">
                     <img src="assets/img/profile.jpg" alt="">
                 </div>
-                <div class="col-md-9 mt-5">
+                <div class="col-md-8 mt-5">
                     <h1 class="display-5 text-shadow">I'm Novan Rohman Nur Khoir</h1>
                     <p class="lead">Web Programmer | UI/UX Designer</p>
                     <p class="lead">
@@ -58,56 +65,183 @@
             </div>
         </div>
     </div>
+    <!-- End Jumbotron -->
 
-    <section class="about">
+    <section class="about" id="About">
         <div class="container">
             <div class="about col-md-12 md-center">
-                <h1 class="text-center">About</h1>
-                <div class="row">
-                    <div class="col-md-5 mr-md-auto">
-                        <h2 class="text-center mt-5 mb-5">Skills</h2>
-                        <section class="skill text-center">
-                            <img class="p-2" src="/assets/icon/html-5 1.svg" alt="HTML5">
-                            <img class="p-2" src="/assets/icon/css-3 1.svg" alt="CSS3">
-                            <img class="p-2" src="/assets/icon/bootstrap-4 1.svg" alt="Bootstrap">
-                            <img class="p-2" src="/assets/icon/github.svg" alt="Github">
-                            <img class="p-2" src="/assets/icon/php-1 1.svg" alt="PHP">
-                            <img class="p-2" src="" alt="">
-                        </section>
+                <h2 class="text-center mt-5 display-4 border-bottom border-white">About</h2>
+                <!-- Skills -->
+                <div class="col-md-12 mr-md-auto">
+                    <h3 class="text-center mt-5 mb-5 display-5">Skills</h3>
+                    <section class="skill text-center">
+                        <img class="p-4" src="assets/icon/html-5 1.svg" alt="HTML5">
+                        <img class="p-4" src="assets/icon/css-3 1.svg" alt="CSS3">
+                        <img class="p-4" src="assets/icon/bootstrap-4 1.svg" alt="Bootstrap">
+                        <img class="p-4" src="assets/icon/github.svg" alt="Github">
+                        <img class="p-4" src="assets/icon/php-1 1.svg" alt="PHP">
+                        <img class="p-4" src="" alt="">
+                    </section>
+                </div>
+                <!-- End Skills -->
+
+                <!-- Ecperience -->
+                <div class="col-md-12">
+                    <section class="Experience">
+                        <h3 class="text-center mb-5 mt-5 display-5">Experience</h3>
+                        <ul>
+                            <li>
+                                <h3>Internship on Rumah Inspirasi Glenmore (Desember 2018- Maret 2019).</h3>
+                            </li>
+                            <br>
+                            <li>
+                                <h3>E-sport logo designer on Hakam.Id (September 2020- Maret 2021)</h3>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- End Experience -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="Portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 md-center mt-5 mb-5">
+                    <div class="p-3 mb-2 text-white">
+                        <h2 class="text-center display-4 border-bottom border-white">Portfolio</h2>
                     </div>
-                    <div class="col-md-7">
-                        <section class="Experience">
-                            <h2 class="text-center mb-5 mt-5">Experience</h2>
-                            <ul>
-                                <li>
-                                    <h3>Internship on Rumah Inspirasi Glenmore (Desember 2018- Maret 2019).</h3>
-                                </li>
-                                <br>
-                                <li>
-                                    <h3>E-sport logo designer on Hakam.Id (September 2020- Maret 2021)</h3>
-                                </li>
-                            </ul>
-                        </section>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 mb-5 p-3">
+                    <div class="card text-white bg-dark">
+                        <img class="card-img-top" src="assets/portfolio/find_jobs.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Find Jobs</h4>
+                            <p class="card-text">Website untuk mencari informasi seputar lowongan kerja....</p>
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-5 p-3">
+                    <div class="card text-white bg-dark">
+                        <img class="card-img-top" src="assets/portfolio/space.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Space</h4>
+                                <p class="card-text">Website penyedia layanan cloud computing....</p>
+                                <a name="" id="" class="btn btn-primary" href="#" role="button">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-5 p-3">
+                    <div class="card text-white bg-dark">
+                        <img class="card-img-top" src="assets/portfolio/find_jobs.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Find Jobs</h4>
+                            <p class="card-text">Website untuk mencari informasi seputar lowongan kerja....</p>
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End Portfolio -->
 
-    <section class="portfolio">
+    <section class="contact" id="Contact">
+        <div class="container">
+            <h2 class="display-4 border-bottom border-white text-center mt-5 mb-5">Contact</h2>
+            <div class="row">
+                <!-- form -->
+                <div class="col-sm-12 col-md-6">
+                    <h3 class="text-center display-5">Contact</h3>
+                    <form name="contact" data-netlify="true" method="POST">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Masukkan Nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="Masukkan E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="telp">No Telp</label>
+                            <input type="tel" id="telp" class="form-control" placeholder="Masukkan No Telp">
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="4" placeholder="Masukkan Pesan"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="ml-auto">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Form -->
+
+                <!-- Maps -->
+                <div class="col-md-6 ml-auto text-center">
+                    <h3 class="text-center display-5">Maps</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15788.088501849803!2d114.2970993411812!3d-8.399484126100146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3fd6ef9e3a239%3A0xb0e31f01d3543262!2zOMKwMjQnMDMuNyJTIDExNMKwMTgnMDYuNCJF!5e0!3m2!1sid!2sid!4v1632289936459!5m2!1sid!2sid"
+                        width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- End Maps -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small dark darken-3 example hoverable">
+
+        <!-- Footer Elements -->
         <div class="container">
 
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 mt-5 flex-center text-center">
+                        <a href="https://github.com/novanrohman" target="blank"><img class="mr-md-5 mr-3 fa-2x" src="assets/icon/github.svg" alt="" style="height: 30px";"></a>
+                        <a href="https://facebook.com/novan.novan.1000" target="blank"><img class="mr-md-5 mr-3 fa-2x" src="assets/icon/facebook.svg" alt="" style="height: 30px"></a>
+                        <a href="https://https://www.instagram.com/novan_rohman" target="blank"><img class="mr-md-5 mr-3 fa-2x" src="assets/icon/instagram.svg" alt="" style="height: 30px"></a>
+                        <a href="https://https://www.linkedin.com/in/novan-rohman-nur-khoir-b23b11165/" target="blank"><img class="mr-md-5 mr-3 fa-2x" src="assets/icon/linkedin.svg" alt="" style="height: 30px"></a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
         </div>
-        
-    </section>
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+
+        <div class="footer-copyright text-center py-3 border-top">&copy 2020 Copyright</div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <!-- end footer -->
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/assets/style/bootstrap4/jquery-3.3.1.slim.min.js" crossorigin="anonymous">
-    </script>
-    <script src="/assets/style/bootstrap4/popper.min.js" crossorigin="anonymous">
-    </script>
-    <script src="/assets/style/bootstrap4/js/bootstrap.min.js" crossorigin="anonymous">
-    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
