@@ -12,6 +12,12 @@ body {
 
 }
 
+@media (max-width: 575.98px) { 
+  #about .skill img{
+    height: 30px;
+  }
+ }
+
 .special{
   background-repeat: no-repeat;
   background-position: center center;
@@ -61,4 +67,5 @@ background-size: 100% 100%;
 .header-area h1 span{
   color: #fff;
 }
+
 
