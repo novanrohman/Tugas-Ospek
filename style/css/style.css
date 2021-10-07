@@ -19,6 +19,12 @@ body {
  .skill img{
     height: 100px !important;
   }
+  #About{
+    padding-top:30px;
+  }
+  #Contact{
+    padding-top:30px;
+  }
  }
 
 .special{
