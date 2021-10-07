@@ -4,6 +4,9 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: black !important;
@@ -73,3 +76,13 @@ background-size: 100% 100%;
   color: rgb(114, 113, 113);
 }
 
+@media (min-width:768px){
+  #About{
+    padding-top:30px;
+  }
+  #Contact{
+    padding-top:30px;
+  }
+
+
+}
