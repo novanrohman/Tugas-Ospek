@@ -82,6 +82,14 @@ background-size: 100% 100%;
   color: rgb(114, 113, 113);
 }
 
+.dropdown-item{
+  color: #ffffff !important;
+}
+
+.dropdown-item:hover{
+  color: #000000 !important;
+}
+
 @media (min-width:768px){
   #About{
     padding-top:30px;

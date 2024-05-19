@@ -21,8 +21,9 @@
 
     <!-- Icon -->
     <link rel="icon" href="assets/img/logo.png">
-    
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="370bcddf-331c-4e37-ae00-6b2c45f64543";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "370bcddf-331c-4e37-ae00-6b2c45f64543"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
 </head>
 
 <body>
@@ -40,12 +41,19 @@
         <!-- Menu -->
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link page-scroll" href="#Home">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#About">About</a>
+                    <a class="nav-link page-scroll" href="#Home">Home<span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                    <div class="dropdown-menu" style="color: #ffff; background-color: black;">
+                      <a class="dropdown-item" href="#Skills">Skills</a>
+                      <a class="dropdown-item" href="#Experience">Experience</a>
+                      <a class="dropdown-item" href="#Certificate">Certificate</a>
+                    </div>
+                  </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#Portfolio">Portfolio</a>
                 </li>
@@ -63,8 +71,8 @@
     <div class="jumbotron">
         <div class="container special">
             <div class="row mt-5">
-                <div class="profile col-md-3 sm-12" data-aos="zoom-out-down">
-                    <img src="assets/img/profile.jpg" alt="">
+                <div class="profile col-md-3 sm-12 " data-aos="zoom-out-down">
+                    <img class="rounded-circle" src="assets/img/profile.jpg" alt="">
                 </div>
                 <div class="col-md-8 mt-5" data-aos="fade-down">
                     <h1 class="display-5 text-shadow">I'm Novan Rohman Nur Khoir</h1>
@@ -85,28 +93,38 @@
                 <h2 data-aos="fade-down" class="text-center mt-5 display-4 border-bottom border-white">About</h2>
                 <!-- Skills -->
                 <div class="col-md-12 mr-md-auto">
+                    <section data-aos="fade-up" class="skill text-center" id="Skills">
                     <h3 data-aos="fade-down" class="text-center mt-5 mb-5 display-5">Skills</h3>
-                    <section data-aos="fade-up" class="skill text-center">
                         <img class="p-4" src="assets/icon/html-5 1.svg" alt="HTML5">
                         <img class="p-4" src="assets/icon/css-3 1.svg" alt="CSS3">
                         <img class="p-4" src="assets/icon/bootstrap-4 1.svg" alt="Bootstrap">
                         <img class="p-4" src="assets/icon/github.svg" alt="Github">
                         <img class="p-4" src="assets/icon/php-1 1.svg" alt="PHP">
+                        <img class="p-4" src="assets/icon/laravel.svg" alt="Laravel">
+                        <img class="p-4" src="assets/icon/livewire.svg" alt="Livewire">
                     </section>
                 </div>
                 <!-- End Skills -->
 
-                <!-- Ecperience -->
+                <!-- Experience -->
                 <div class="col-md-12">
-                    <section class="Experience">
+                    <section class="Experience" id="Experience">
                         <h3 class="text-center mb-5 mt-5 display-5" data-aos="fade-right">Experience</h3>
                         <ul>
                             <li data-aos="fade-right">
-                                <p>Internship on Rumah Inspirasi Glenmore (Desember 2018- Maret 2019).</p>
+                                <p>Internship - PT. Media Solusi Informasi (February 2024 - Juli 2024).</p>
                             </li>
                             <br>
                             <li data-aos="fade-right">
-                                <p>E-sport logo designer on Hakam.Id (September 2020- Maret 2021)</p>
+                                <p>Freelance - Shellfish Bali Tour (Juny 2023 - October 2023).</p>
+                            </li>
+                            <br>
+                            <li data-aos="fade-right">
+                                <p>E-sport logo designer - Hakam.Id (September 2020 - March 2021)</p>
+                            </li>
+                            <br>
+                            <li data-aos="fade-right">
+                                <p>Internship - Rumah Inspirasi Glenmore (December 2018 - March 2019).</p>
                             </li>
                         </ul>
                     </section>
@@ -115,20 +133,82 @@
 
                 <!-- certificate -->
                 <div class="col-md-12">
-                    <section class="Experience">
+                    <section class="Experience" id="Certificate">
                         <h3 class="text-center mb-5 mt-5 display-5" data-aos="fade-right">Certificate</h3>
+
+                        <div class="container">
+                            <div class="row">
+                                <!-- Sertif 1 -->
+                                <div class="col-sm-6 col-md-4 mb-5 p-3" data-aos="fade-down">
+                                    <div class="card text-white bg-dark">
+                                        <img class="card-img-top" src="assets/sertif/Sertifikat Hacktiv8.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Fundamental UI/UX</h4>
+                                            <p class="card-text">Program Studi Independen PT. Hacktivate Teknologi Indonesia</p>
+                                        
+                                            <!-- Modal -->
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Lihat</button>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl"><img class="col-12" src="assets/sertif/Sertifikat Hacktiv8.png" alt=""></div>
+                                            </div>
+                                            <!-- End Modal -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Sertif 1 -->
+                                <!-- Sertif 2 -->
+                                <div class="col-sm-6 col-md-4 mb-5 p-3" data-aos="fade-down">
+                                    <div class="card text-white bg-dark">
+                                        <img class="card-img-top" src="assets/sertif/Sertifikat Hacktiv8.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Fundamental UI/UX</h4>
+                                            <p class="card-text">Program Studi Independen PT. Hacktivate Teknologi Indonesia</p>
+                                        
+                                            <!-- Modal -->
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Lihat</button>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl"><img class="col-12" src="assets/sertif/Sertifikat Hacktiv8.png" alt=""></div>
+                                            </div>
+                                            <!-- End Modal -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Sertif 2 -->
+                                <!-- Sertif 3 -->
+                                <div class="col-sm-6 col-md-4 mb-5 p-3" data-aos="fade-down">
+                                    <div class="card text-white bg-dark">
+                                        <img class="card-img-top" src="assets/sertif/Sertifikat Hacktiv8.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Fundamental UI/UX</h4>
+                                            <p class="card-text">Program Studi Independen PT. Hacktivate Teknologi Indonesia</p>
+                                        
+                                            <!-- Modal -->
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Lihat</button>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl"><img class="col-12" src="assets/sertif/Sertifikat Hacktiv8.png" alt=""></div>
+                                            </div>
+                                            <!-- End Modal -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Sertif 3 -->
+                        </div>
+
                         <ul>
                             <li data-aos="fade-right">
-                                <p>Dicoding - Cloud Practitioner Essentials (Belajar Dasar AWS Cloud) 21 Juli 2021 - 21 Juli 2024</p>
+                                <p>Dicoding - Cloud Practitioner Essentials (Belajar Dasar AWS Cloud) 21 Juli 2021 - 21
+                                    Juli 2024</p>
                                 <br>
-                                <span>Credential <a href="https://dicoding.com/certificates/L4PQ34Q6OPO1" target="blank">L4PQ34Q6OPO1</a></span>
+                                <span>Credential <a href="https://dicoding.com/certificates/L4PQ34Q6OPO1"
+                                        target="blank">L4PQ34Q6OPO1</a></span>
                             </li>
                             <br>
                             <li data-aos="fade-right">
                                 <p>Dicoding - Belajar Dasar Pemrograman Web 21 Maret 2020 - 21 Maret 2023</p>
                                 <br>
-                                <span>Credential <a href="https://www.dicoding.com/certificates/0LZ0DEYN0X65" target="blank">0LZ0DEYN0X65</a></span>
-                            </li>                   
+                                <span>Credential <a href="https://www.dicoding.com/certificates/0LZ0DEYN0X65"
+                                        target="blank">0LZ0DEYN0X65</a></span>
+                            </li>
                         </ul>
                     </section>
                 </div>
@@ -150,6 +230,16 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-sm-6 col-md-4 mb-5 p-3" data-aos="fade-down">
+                    <div class="card text-white bg-dark">
+                        <img class="card-img-top" src="assets/portfolio/uajy_mycampus.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">UAJY MyCampus (UI/UX)</h4>
+                            <p class="card-text">Merupkan sebuah sistem informasi manajemen kampus</p>
+                            <a name="" id="" class="btn btn-primary" target="_blank" href="https://www.figma.com/proto/fBqpED9kYoJbtX5EOLsm11/UAJY-MyCampus?page-id=0%3A1&node-id=210-4891&viewport=1195%2C325%2C0.12&t=Ya13NATk0GOV9yK9-1&scaling=scale-down&starting-point-node-id=210%3A4893" role="button">Lihat</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-6 col-md-4 mb-5 p-3" data-aos="fade-down">
                     <div class="card text-white bg-dark">
                         <img class="card-img-top" src="assets/portfolio/find_jobs.jpg" alt="">
@@ -245,13 +335,12 @@
                     <div class="mb-5 mt-5 flex-center text-center">
                         <a href="https://github.com/novanrohman" target="blank"><img class="mr-md-5 mr-3 fa-2x"
                                 src="assets/icon/github.svg" alt="" style="height: 30px" ;"></a>
-                        <a href="https://facebook.com/novan.novan.1000" target="blank"><img
-                                class="mr-md-5 mr-3 fa-2x" src="assets/icon/facebook.svg" alt=""
-                                style="height: 30px"></a>
+                        <a href="https://facebook.com/novan.novan.1000" target="blank"><img class="mr-md-5 mr-3 fa-2x"
+                                src="assets/icon/facebook.svg" alt="" style="height: 30px"></a>
                         <a href="https://www.instagram.com/novan_rohman" target="blank"><img class="mr-md-5 mr-3 fa-2x"
                                 src="assets/icon/instagram.svg" alt="" style="height: 30px"></a>
-                        <a href="https://www.linkedin.com/in/novan-rohman-nur-khoir-b23b11165/"
-                            target="blank"><img class="mr-md-5 mr-3 fa-2x" src="assets/icon/linkedin.svg" alt=""
+                        <a href="https://www.linkedin.com/in/novan-rohman-nur-khoir-b23b11165/" target="blank"><img
+                                class="mr-md-5 mr-3 fa-2x" src="assets/icon/linkedin.svg" alt=""
                                 style="height: 30px"></a>
                     </div>
                 </div>
@@ -264,13 +353,16 @@
         <!-- Footer Elements -->
         <!-- Copyright -->
 
-        <div class="footer-copyright text-center py-3 border-top">&copy 2021 Copyright | Made with <span style="color: #e25555;">&hearts;</span> by. novan rohman </div>
+        <div class="footer-copyright text-center py-3 border-top" >&copy 2021 - <span id="copyright"></span> | Made with <span
+                style="color: #e25555;">&hearts;</span> by. novan rohman </div>
         <!-- Copyright -->
 
     </footer>
 
     <!-- end footer -->
 
+    <!-- Year -->
+    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -284,20 +376,20 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Firebase -->
-    
-    <script src="dist/firebase.js" type="module"></script>
+
+    <!-- <script src="dist/firebase.js" type="module"></script> -->
 
     <!-- End Firebase -->
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          once: true
-      });
+        AOS.init({
+            once: true
+        });
     </script>
-                            
-    
+
+
 </body>
 
 </html>
