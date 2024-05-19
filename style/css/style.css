@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Roboto_Mono;
-  src: url(../../assets/font/RobotoMono.ttf);
+  font-family: Poppins;
+  src: url(../../assets/font/Poppins-Medium.ttf);
 }
 
 
@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: black !important;
-  font-family: Roboto_Mono !important;
+  font-family: Poppins !important;
   color: #fff !important;
 
 }
