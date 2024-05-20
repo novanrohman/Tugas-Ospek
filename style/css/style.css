@@ -1,8 +1,12 @@
 @font-face {
-  font-family: Poppins;
-  src: url(../../assets/font/Poppins-Medium.ttf);
+  font-family: Poppins-Regular;
+  src: url(../../assets/font/Poppins/Poppins-Regular.ttf);  
 }
 
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../../assets/font/Poppins/Poppins-Medium.ttf);  
+}
 
 html {
   scroll-behavior: smooth;
@@ -10,9 +14,17 @@ html {
 
 body {
   background-color: black !important;
-  font-family: Poppins !important;
+  font-family: Poppins-Regular !important;
   color: #fff !important;
 
+}
+
+/* .modal-dialog{
+  height:90% !important;
+} */
+
+.poppins-medium{
+  font-family: Poppins-Medium !important;
 }
 
 @media (max-width: 991.98px) { 
@@ -63,7 +75,7 @@ background-size: 100% 100%;
 }
 
 .profile img {
-  width: 200px;
+  width: 300px;
 }
 
 .header-area h1{
@@ -90,6 +102,25 @@ background-size: 100% 100%;
   color: #000000 !important;
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 @media (min-width:768px){
   #About{
     padding-top:30px;
@@ -100,3 +131,37 @@ background-size: 100% 100%;
 
 
 }
+
+/* Modal */
+/* @mixin modal-fullscreen() {
+  padding: 0 !important; // override inline padding-right added from js
+  
+  .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+  
+  .modal-body {
+    overflow-y: auto;
+  }
+ 
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    
+    .modal-fullscreen#{$infix} {
+      @include modal-fullscreen();
+    }
+  
+  }
+} */
