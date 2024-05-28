@@ -8,6 +8,11 @@
   src: url(../../assets/font/Poppins/Poppins-Medium.ttf);  
 }
 
+@font-face {
+  font-family: Poppins-Light;
+  src: url(../../assets/font/Poppins/Poppins-Light.ttf);  
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,6 +30,10 @@ body {
 
 .poppins-medium{
   font-family: Poppins-Medium !important;
+}
+
+.poppins-light{
+  font-family: Poppins-Light !important;
 }
 
 @media (max-width: 991.98px) { 
@@ -131,6 +140,10 @@ background-size: 100% 100%;
 
 
 }
+
+.img-thumbnail {
+  border: 0 !important;
+  }
 
 /* Modal */
 /* @mixin modal-fullscreen() {
